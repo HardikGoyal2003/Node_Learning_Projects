@@ -25,6 +25,8 @@ app.get('/contact', (req, res) => {
     res.render('contact');
 });
 
+// Starting on September 30, 2024, less secure apps, third-party apps, or devices that have you sign in with only your username and password will no longer be supported for Google Workspace accounts
+
 app.post('/contact/send', (req, res) => {
     let transporter = nodeMailer.createTransport({
         service: 'Gmail',
